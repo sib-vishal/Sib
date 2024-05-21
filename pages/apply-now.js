@@ -4,10 +4,16 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { Metadata } from "next";
 
 import * as CONSTANTS from "../constants/constants";
 import * as functions from "../functions/functions";
 
+export const metadata = {
+  title: "Acme Dashboard",
+  description: "The official Next.js Course Dashboard, built with App Router.",
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+};
 
 const basicSkillsOptions = [
   { label: "HTML", value: "HTML" },
@@ -493,6 +499,7 @@ export default function ApplyNow() {
     );
     setDivElements([...divElements, newDivElement]);
   };
+
   return (
     <>
       {/* <Head>
