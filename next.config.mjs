@@ -82,7 +82,7 @@ const nextConfig = {
       },
     ];
   },
-  // assetPrefix: 'https://www.sibinfotech.com',
+  assetPrefix: 'https://sib-blue.vercel.app/',
 };
 
 export default nextConfig;
